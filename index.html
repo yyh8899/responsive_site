@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:Light">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:Italic">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ALANTE Real Estate</title>
+ </head>
+ <body>
+    <div class="topbar"></div>
+    
+   <!-- *********** header section ************** -->
+   	<header>   	   	  	   	   
+   	        <!-- Hamburger menu -->
+	   	  	<nav class="navbar navbar-default" role="navigation">
+	   	  	    <div class = "container">
+	   	  	        <div class="row">  
+	   	  	     		<div class="navbar-header">  	   	  	     		
+	   	  	     	    <!-- for xxs, xs < 768-->
+				   	      	<div class="nav-visible">
+			   	  	     		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_navbar">
+				   	  	     		<span class="sr-only">Toggle navigation</span>
+				   	  	     		<span class="icon-bar"></span>
+				   	  	     		<span class="icon-bar"></span>
+				   	  	     		<span class="icon-bar"></span>
+				   	  	     		<span class="icon-bar"></span>
+				   	  	     	</button>
+					   	        <img src="images/logo_alante.png" class="img-responsive" alt="Alante logo">
+					   	        <div class="custom_display"><a href="#">Properties</a><a href="#">Communities</a></div>
+								<a href="#"><img src="images/icon_logout.png" alt="Logout"></a>		
+				   	      	</div>				   	     				   	     
+				   	        <!-- for lg, md and sm >768 -->   
+			                <div class="nav-display">
+				   	  	     	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_navbar">
+					   	  	     	<span class="sr-only">Toggle navigation</span>
+					   	  	     	<span class="icon-bar"></span>
+					   	  	     	<span class="icon-bar"></span>
+					   	  	     	<span class="icon-bar"></span>
+					   	  	     	<span class="icon-bar"></span>
+					   	  	    </button>
+					   	  	    <div class="col-md-4 col-lg-5 col-sm-4 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 logo">
+				   	         		<img src="images/logo_alante.png" class="img-responsive" alt="Alante logo">
+				   	      		</div>
+					   	    </div>
+		            	    <!-- navigation -->
+				            <div class="col-md-8 col-lg-7 col-sm-8 topnav visible-lg visible-md visible-sm">
+				   	      	    <div class="row visible-lg visible-md">
+				   	      	        <div class="col-lg-12">
+						   	        	<ul class="login">
+							   	          	<li><a href="#"><img src="images/icon_account.png" alt="Account"> Account</a></li>
+							   	          	<li><a href="#"><img src="images/icon_logout.png" alt="Logout"> Logout</a></li>
+						   	          	</ul>
+					   	          	</div>
+				   	          	</div>
+					   	        <div class="row contact visible-lg visible-md">
+					   	           	<div class="col-lg-12">
+						   	            <span>+1 (408) 555 5555</span>
+						   	          	<a href="#"><img src="images/header_icon_rss.png" alt="rss"></a>
+						         	    <a href="#"><img src="images/header_icon_linkedin.png" alt="Linked In"></a>
+						         	    <a href="#"><img src="images/header_icon_yt.png" alt="Youtube"></a>
+						         	    <a href="#"><img src="images/header_icon_fb.png" alt="Facebook"></a>
+						         	    <a href="#"><img src="images/header_icon_pin.png" alt="Pinterest"></a>
+						         	    <a href="#"><img src="images/header_icon_twitter.png" alt="Twitter"></a>
+					         	    </div>
+					   	        </div>
+					   	        <div class="row">
+						   	      	<div class="collapse navbar-collapse" id="top_navbar">
+							   	  	    <ul class="nav navbar-nav navbar-custom">
+							   	  	    	<li><a href="#">Properties</a></li>
+								   	        <li><a href="#">Communities</a></li>
+								   	        <li><a href="#">Services</a></li>
+								   	        <li><a href="#">Our team</a></li>
+								   	        <li class="hidden-sm"><a href="#">Contact</a></li>
+								   	        <li class="visible-sm"><a href="#"><img src="images/icon_logout.png" alt="Logout" class="logout"></a></li>
+							   	        </ul>
+							   	    </div>
+				                </div>	
+			   	  		    </div>
+		   	  			</div>
+	   	  			</div>
+	   			</div>
+	   	  	</nav>
+	   	  			<!-- end of nav-->   
+   </header>
+	   	  		
+			
+  
+   <!-- ******** Navigation ********** -->
+	<div id="nav_img">
+	   <!-- Carousel -->
+	   <div class="carousel" id="header_images">
+		   	<ol class="carousel-indicators visible-lg visible-md">
+		   		<li data-target="#header_images" data-slide-to="0" class="active"></li>
+		   		<li data-target="#header_images" data-slide-to="1"></li>
+		   		<li data-target="#header_images" data-slide-to="2"></li>
+		   	    <li data-target="#header_images" data-slide-to="3"></li>
+		   	</ol>
+		   	<div class="carousel-inner">
+		   		<div class="item active bird"></div>
+		        <div class="item town"></div>
+		        <div class="item bird"></div>
+		        <div class="item town"></div>
+		    </div>
+		    <!-- control -->
+		    <a class="left carousel-control" href="#header_images" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		    <a class="right carousel-control" href="#header_images" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+		    <!-- Categories -->
+	        <div id="main_menu" class="visible-lg visible-md">
+		       <ul>
+				    <li><a href="#">Areas <span>▶</span></a></li>
+				    <li><a href="#">Neighborhoods <span>▶</span></a></li>
+				    <li><a href="#">Cities <span>▶</span></a></li>  
+		       </ul>
+	           <p>Explore Plymouth | <a href="#">Learn more</a></p>
+	        </div>
+	   </div>     
+	   <!-- Accordion < 768 px-->
+
+		<div class="panel-group container visible-sm visible-xs visible-xxs" id="accordion" role="tablist" aria-multiselectable="true">
+		  <!-- menuOne - Areas -->
+		 
+		   	<div class="panel panel-default col-sm-12 col-xs-12 col-xxs-12">
+		   		<div class="panel-heading" role="tab" id="menuOne">
+		   		  	<h4 class="panel-title">
+		   		  		<a  href="#areas" class="heading collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="areas">Areas</a>
+		   		  	</h4>
+		   		</div>
+		   		<div class="panel-collapse collapse in" id="areas" role="tabpanel" arialabelledby="menuOne">
+		   		 	<div class="panel-body">
+		   		 		<div class="panel_content">
+						    <h1>Exlpore areas in the south shore</h1>
+						    <div class ="row">
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">braintree</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">duxbury</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">hull</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">marshfield</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">quincy</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">weymouth</a></h3>
+							      </div>			      
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">Cohasset</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">hingham</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">kingston</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">plymouth</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">scituate</a></h3>
+							      </div>
+							</div>
+		     			</div>
+		   		 	</div>
+		   		</div>
+		    </div>
+
+		    <!-- menuTwo - Cities -->
+		    <div class="panel panel-default col-sm-12 col-xs-12 col-xxs-12">
+		   		<div class="panel-heading" role="tab" id="menuTwo">
+		   		  	<h4 class="panel-title">
+		   		  		<a href="#cities" class="heading collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="cities">cities</a>
+		   		  	</h4>
+		   		</div>
+		   		<div class="panel-collapse collapse" id="cities" role="tabpanel" arialabelledby="menuTwo">
+		   		 	<div class="panel-body">
+		   		 		<div class="panel_content">
+						      <h1>Exlpore cities in the south shore</h1>
+						      <div class ="row">
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">braintree</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">duxbury</a></h3>   
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">hull</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">marshfield</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">quincy</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">weymouth</a></h3>
+							      </div>			      
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">Cohasset</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">hingham</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">kingston</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">plymouth</a></h3>
+							      </div>
+							      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+							      	<h3><a href="#">scituate</a></h3>
+							      </div>
+							  </div>
+					    </div>     
+		     		</div>
+		   		 </div>
+		   	</div>
+
+		 <!-- menuThree - Neighborhoods -->
+		   <div class="panel panel-default col-sm-12 col-xs-12 col-xxs-12">
+			   	<div class="panel-heading" role="tab" id="menuThree">
+			   		<h4 class="panel-title">
+			   		  	<a href="#neighborhoods" class="heading collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="neighborhoods">neighborhoods</a>
+			   		  	</h4>
+			   	</div>
+			   	<div class="panel-collapse collapse" id="neighborhoods" role="tabpanel" arialabelledby="menuThree">
+			   		<div class="panel-body">
+			   		 	<div class="panel_content">
+							    <h1>Neighborhoods in the south shore</h1>
+							    <div class ="row">
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">braintree</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">duxbury</a></h3>							     
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">hull</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">marshfield</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">quincy</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">weymouth</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">Cohasset</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">hingham</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">kingston</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">plymouth</a></h3>
+								      </div>
+								      <div class="col-md-3 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+								      	<h3><a href="#">scituate</a></h3>
+								      </div>
+								</div>
+						</div>
+			     	</div>
+		   		</div>
+		   </div>
+		</div>
+	</div>
+ 
+ <!-- ******** Search ********** -->
+
+   	<section id="search">
+   		<div class="container">
+   		  <!-- long search form for md and lg -->
+   		    <div class="row visible-md visible-lg visible-sm">
+	           	<h1>Search for real estate on the south shore</h1>
+	           	<form>              	
+           			<div class="form-group col-md-12 col-lg-4 col-sm-12">
+		           		<label class="sr-only">Address</label>
+		           		<input type="text" name="address" class="form-control" placeholder="Address, Zip or MLS#">
+	          		</div>
+              		<div class="form-group col-md-3 col-lg-2 col-sm-3">
+		           		<label class="sr-only">Beds</label>
+		           		<select id="beds" name="beds" class="form-control">
+				             <option value="">Beds</option>
+				             <option value="1">1+</option>
+				             <option value="2">2+</option>
+				             <option value="3">3+</option>
+				             <option value="4">4+</option>
+				        </select>
+	           		</div>
+		            <div class="form-group col-md-3 col-lg-2 col-sm-3">
+			            <label class="sr-only">Baths</label>
+			            <select id="baths" name="baths" class="form-control" >
+			                 <option value="">Baths</option>
+			                 <option value="1">1+</option>
+			                 <option value="2">2+</option>
+			                 <option value="3">3+</option>
+			            </select>
+		            </div>
+	                <div class="form-group col-md-3 col-lg-2 col-sm-3">
+			            <label class="sr-only">Min $</label>
+			            <select id="min" name="min" class="form-control">
+			                 <option value="">Min $</option>
+			                 <option value="100,000">100,000</option>
+			                 <option value="250,000">250,000</option>
+			                 <option value="350,000">350,000</option>
+			            </select>
+	           		</div>
+		            <div class="form-group col-md-3 col-lg-2 col-sm-3">
+			            <label class="sr-only">Max $</label>
+			            <select id="max" name="max" class="form-control" >
+			                 <option value="">Max $</option>
+			                 <option value="500,000">500,000</option>
+			                 <option value="650,000">650,000</option>
+			                 <option value="750,000">750,000</option>
+			            </select>
+		            </div>
+	                <button class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Click here to begain searching real estate in your area</button>
+            	</form>
+            </div>
+           <!-- short search form for sm and xs -->
+           	<div class="row visible-xxs visible-xs visible-xxs">
+           		<form>
+		           	<div class="col-xxs-12 col-xs-12">
+		           	  	<h1>Search for real estate</h1>
+		           		<div class="input-group">
+		           		 	<label class="sr-only">Address</label>
+							<input type="text" class="form-control" placeholder="Address, Zip or MLS#">
+							<span class="input-group-addon glyphicon glyphicon-search"></span>    
+						</div>
+					</div>
+          		</form>
+          		<a href="#">Additional Options</a>
+    		</div>
+    	</div>
+   	</section>
+
+   <!-- ******** Featured ********** -->
+
+    <section id="featured">
+	   	<div class="container">
+		   <h2>Featured Neighborhoods</h2>
+		   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+			   	<img src="images/feature_braxton.jpg" alt="braxton" class="img-responsive img-thumbnail">
+			   	<h3>Braxton</h3>
+			   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		   </div>
+		   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+			    <img src="images/feature_beverly.jpg" alt="Beverly" class="img-responsive img-thumbnail">
+			   	<h3>Beverly Hills</h3>
+			   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		   </div>
+		   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+			    <img src="images/feature_whittington.jpg" alt="Wittington" class="img-responsive img-thumbnail">
+			   	<h3>Wittington</h3>
+			   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		   </div>
+		   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+			    <img src="images/feature_lancashire.jpg" alt="LankaShire" class="img-responsive img-thumbnail">
+			   	<h3>Lankashire</h3>
+			   	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		   </div>
+	    </div>
+    </section>
+
+  <!-- *********** Main Content ******** -->
+	<section id="main_content">
+	     	<h1>A tour around hingham mass happenings!</h1>
+		    <div class="container center-block">
+		      <!-- row 1 -->
+		        <div class="row row-eq-height">
+			        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 thumbnail">
+				        <img src="images/list_mansion.jpg" alt="list" class="img-responsive">
+				        <div class="caption">
+					       <h3>482, Braxford Ave.</h3>
+					       <p>Real Estate Listing</p>
+					       <p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+						</div>
+		            </div>
+			        <div class="col-md-4 col-lg-4 col-sm-6  visible-lg visible-md visible-sm thumbnail">
+			        	<img src="images/list_food.jpg" alt="list" class="img-responsive">
+			        	<div class="caption">
+				        	<h3>482, Braxford Ave.</h3>
+				       		<p>Real Estate Listing</p>
+				       		<p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+						</div>
+			       	</div>
+			       	<div class="col-lg-4 visible-lg col-md-4 visible-md thumbnail">
+			       		<img src="images/list_house.jpg" alt="list" class="img-responsive">
+			       		<div class="caption">
+				       		<h3>482, Braxford Ave.</h3>
+				       		<p>Real Estate Listing</p>
+				       		<p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+				       	</div>
+				    </div>
+			     </div>
+
+			     <!-- row 2 -->
+			      <div class="row  row-eq-height">
+			       	<div class="col-md-4 col-lg-4 col-sm-6  col-xs-12 thumbnail">
+			       		<img src="images/list_susana.jpg" alt="list" class="img-responsive">
+				    	<div class="caption">
+				       		<h3>482, Braxford Ave.</h3>
+				       		<p>Real Estate Listing</p>
+				       		<p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+						</div>
+			        </div>
+		       		<div class="col-md-4 col-lg-4 col-sm-6 visible-lg visible-md visible-sm thumbnail">
+		       			<img src="images/list_mansion.jpg" alt="list" class="img-responsive">
+		       			<div class="caption">
+					       	<h3>482, Braxford Ave.</h3>
+					       	<p>Real Estate Listing</p>
+					       	<p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+					    </div>
+			     	</div>
+			       	<div class="col-lg-4 visible-lg col-md-4 visible-md thumbnail">
+			       		<img src="images/list_food.jpg" alt="list" class="img-responsive">
+			       		<div class="caption">
+					       	<h3>482, Braxford Ave.</h3>
+					       	<p>Real Estate Listing</p>
+					       	<p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+					    </div>
+			       	</div>
+			    </div>
+
+			    <!-- row 3 -->
+			    <div class="row row-eq-height">
+			        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 thumbnail">
+			       		<img src="images/list_food.jpg" alt="list" class="img-responsive">
+				       	<div class="caption">
+					       	<h3>482, Braxford Ave.</h3>
+					       	<p>Real Estate Listing</p>
+					       	<p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+				       	</div>
+			       	</div>
+			       	<div class="col-md-4 col-lg-4 col-sm-6 visible-lg visible-md visible-sm thumbnail">
+			       		<img src="images/list_mansion.jpg" alt="list" class="img-responsive">
+				        <div class="caption">
+					        <h3>482, Braxford Ave.</h3>
+					        <p>Real Estate Listing</p>
+					        <p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+					    </div>
+				    </div>
+			       	<div class="col-lg-4 visible-lg col-md-4 visible-md thumbnail">
+			       		<img src="images/list_jason.jpg" alt="list" class="img-responsive">
+				       	<div class="caption">
+					       <h3>482, Braxford Ave.</h3>
+					       <p>Real Estate Listing</p>
+					       <p>isting Agent: Victoria Mejia Sanchez
+								DRE#: 01187554
+								Courtesy of: Rodeo Realty</p>
+					       </div>
+				       	</div>
+		      		</div>
+		    </div>
+	</section>
+
+<!-- ***********  testimonials ************ -->
+
+    <section id="testimonials">
+   	    <div class="container">
+	     	<div class="row">
+		        <div class="col-md-6 col-lg-6 col-sm-12">
+			       <h2>Welcome to eElite Realty</h2>
+			      <!--
+			       <video width="320" height="240" controls>
+			          <source src="movie.mp4" type="video/mp4">
+			       </video>
+			      -->
+			       <img src="images/video.jpg" alt="video" class="img-thumbnail">
+			       <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus nunc, condimentum eget rhoncus venenatis, dignissim non ligula. Sed nec tortor ipsum. Pellentesque commodo, est eu consectetur fringilla, mauris nibh blandit turpis, a vestibulum. Morbi tellus nunc, condimentum eget rhoncus venenatis.
+			       </p>
+	       		</div>
+			    <div class="col-md-6 col-lg-6 col-sm-12">
+			        <h2>Testimonials</h2>
+			        <blockquote>
+				       	Stacy Clarkson says,
+				       	<p>
+							Morbi tellus nunc, condimentum eget rhoncus venenatis, dignissim non ligula. Sed nec tortor ipsum. Morbi iaculis semper sodales. Proin id diam quam. 
+							Phasellus vitae erat in pharetra sagittis nec mattis odio. Morbi dignissim lect dignissim non ligula dolor sit amet.
+						</p>
+						<a href="#" class="red_font">Read More</a>
+			        </blockquote>
+			        <div class="row">
+			           	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					       <div class="circle">
+					       		<a href="#"><span class="arrow leftside">&#9001;</span></a>
+					       </div>
+				       	</div>
+				       	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					       <div class="circle">
+					       		<a href="#"><span class="arrow rightside">&#9002;</span></a>
+					       </div>
+				       	</div>
+				    </div>
+	       		</div>
+	     	</div>
+        </div>
+    </section>
+
+<!-- ***********  social ************ -->
+
+    <section id="social">
+	    <div class="container visible-lg visible-md">
+		    <div class="row">
+			    <div class="col-lg-4 col-md-4">
+				    <h2>Instagram</h2>
+					<div class="row">
+					    <div class="col-lg-4 col-md-4 col-space">
+						    <img src="images/tile_dog.jpg" class="img-thumbnail">
+						</div>
+						<div class="col-lg-4 col-md-4 col-space">
+						    <img src="images/tile_stage.jpg" class="img-thumbnail">
+						</div>
+						<div class="col-lg-4 col-md-4 col-space">
+						    <img src="images/tile_eye.jpg" class="img-thumbnail">
+						</div>
+						</div>
+					<div class="row">
+						<div class="col-md-4 col-md-4 col-space">						     	
+						    <img src="images/tile_electronic.jpg" class="img-thumbnail">
+						</div>
+						<div class="col-md-4 col-md-4 col-space">
+						    <img src="images/tile_paint.jpg" class="img-thumbnail">
+						</div>
+						<div class="col-md-4 col-md-4 col-space">
+						     <img src="images/tile_sunset.jpg" class="img-thumbnail">
+						</div>
+					</div>
+					<div class="row">
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_gate.jpg" class="img-thumbnail">
+						</div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_run.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_food.jpg" class="img-thumbnail"s>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_dog.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_stage.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_eye.jpg" class="img-thumbnail">
+						</div>
+					</div>
+					<a href="#">View on Instragram</a>
+				</div>
+			    <div class="col-md-4">
+			    	<h2>Instagram</h2>
+				    <div class="row">
+				    	<div class="col-md-4 col-md-4 col-space">
+				     		<img src="images/tile_dog.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_stage.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_eye.jpg" class="img-thumbnail">
+					    </div>
+				    </div>
+				    <div class="row">
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_electronic.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_paint.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_sunset.jpg" class="img-thumbnail">
+					    </div>
+				    </div>
+				    <div class="row">
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_gate.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_run.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_food.jpg" class="img-thumbnail"s>
+						</div>
+			    	</div>
+				    <div class="row">
+				    	<div class="col-md-4 col-md-4 col-space">
+				     		<img src="images/tile_dog.jpg" class="img-thumbnail">
+				    	</div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_stage.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-4 col-md-4 col-space">
+					     	<img src="images/tile_eye.jpg" class="img-thumbnail">
+					    </div>
+    				</div>
+    				<a href="#">View on Pinterest</a>
+    			</div>
+			    <div class="col-md-4">
+			    	<h2>Facebook</h2>
+				    <div class="row col-space">
+					    <div class="col-md-4">
+					     	<img src="images/tile_dog.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-8 moveup">
+					     	<h3>Lorem ipsum dolor.</h3>
+					     	<p>Lorem ipsum dolor sit amet, consectetur via consectetur.</p>
+					     	<a href="#">Read more</a>					    
+					    </div>
+			    	</div>
+			    	<div class="row col-space">
+					    <div class="col-md-4">
+					     	<img src="images/tile_dog.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-8 moveup">
+					     	<h3>Lorem ipsum dolor.</h3>
+					     	<p>Lorem ipsum dolor sit amet, consectetur via consectetur.</p>
+					     	<a href="#">Read more</a>					    
+					    </div>
+			    	</div>
+				    <div class="row">
+					    <div class="col-md-4">
+					     	<img src="images/tile_dog.jpg" class="img-thumbnail">
+					    </div>
+					    <div class="col-md-8 moveup">
+					     	<h3>Lorem ipsum dolor.</h3>
+					     	<p>Lorem ipsum dolor sit amet, consectetur via consectetur.</p>
+					     	<a href="#">Read more</a>					    
+					    </div>
+			    	</div> 			    	
+    			</div>
+    		</div>
+    	</div>
+
+    	<!-- visible when screen < =768 -->
+    	<div class="container visible-sm visible-xs">
+    		<div class="row">
+			    <div class="col-sm-6 col-xs-12">
+				    <h2>Get in touch</h2>
+				    <form>
+				    	<div class="form-group">
+		           			<label class="sr-only">Full name</label>
+		           			<input type="text" name="full_name" class="form-control" placeholder="Full Name">
+	          			</div>
+	          			<div class="form-group">
+		           			<label class="sr-only">Email Address</label>
+		           			<input type="text" name="email" class="form-control" placeholder="Email Address">
+	          			</div>
+	          			<div class="form-group">
+		           			<label class="sr-only">Comments</label>
+		           			<textarea rows="4" cols="50" name="comments" class="form-control">Comments
+		           			</textarea>
+	          			</div>
+				    </form>
+				    <p>We hate spam too!<button class="btn btn-danger">Submit</button></p>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+				    <h2>OnFacebook</h2>
+				    <p>Lorem ipsum dolor sit amet, consectetur lorem ipsum <a mailto="#">@adipiscing</a> sectetur <a href="#">http://t.co/7avAnhnG</a> via <a mailto="#">@pellentesque</a> eteste amet.</p>
+				    <p>Lorem ipsum dolor sit amet, consectetur estet via <a mailto="#">@pellentesque</a> eteste amet.</p>
+				    <p>Lorem ipsum dolor sit amet, consectetur lorem ipsum @adipiscing sectetur <a href="#">http://t.co/7avAnhnG</a> via <a mailto="#">@pellentesque</a> eteste amet.</p>
+				</div>
+			</div>
+    	</div>
+    </section>
+
+   <!-- ***************** Survey section *************** -->
+
+    <section id="survey_where">
+     	<div class="container">
+		        <h1>Where do you want to live in the south shore?</h1>
+		        <div class ="row">
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">braintree</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">duxbury</a></h3>			     
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">hull</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">marshfield</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">quincy</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">weymouth</a></h3>
+			      </div>	      
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">Cohasset</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">hingham</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">kingston</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">plymouth</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">scituate</a></h3>
+			      </div>  
+		        </div>
+		</div>
+    </section>
+    <section id="survey_what hidden-xs">
+	    <div class="container visible-sm visible-md visible-lg ">    
+	    <h1>What are the cities in the south shore?</h1>
+		    <div class ="row ">
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">braintree</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">duxbury</a></h3>			     
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#"><a href="#"><a href="#"><a href="#">hull</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#"><a href="#"><a href="#">marshfield</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#"><a href="#">quincy</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">weymouth</a></h3>
+			      </div>	      
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">Cohasset</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">hingham</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">kingston</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">plymouth</a></h3>
+			      </div>
+			      <div class="col-md-2 col-sm-3 col-xs-3 col-xxs-6 col-lg-2">
+			      	<h3><a href="#">scituate</a></h3>
+			      </div>  
+    		</div>
+    	</div>
+   </section>
+
+<!-- ********** footer ************* -->
+
+   <footer class="navbar-inverse">
+			<div class="nav_menu hidden-xs">
+				<ul class="col-lg-12">
+				    <li><a href="#">Home</a></li>
+					<li><a href="#">Properties</a></li>
+					<li><a href="#">Communities</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Our team</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>  
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					     <figure>
+					     	<a href="#"><img src="images/icon_rss.png" alt="rss"></a>
+					     	<figcaption>RSS</figcaption>
+					     </figure>
+					     <figure>   
+					        <a href="#"><img src="images/icon_linkedin.png" alt="Linked In"></a>
+					        <figcaption>Linked In</figcaption>
+					     </figure>	    
+					     <figure>   
+					        <a href="#"><img src="images/icon_youtube.png" alt="Youtube"></a>
+					        <figcaption>Youtube</figcaption>
+					     </figure>
+					     <figure>
+					        <a href="#"><img src="images/icon_fb.png" alt="Facebook"></a>
+					        <figcaption>Facebook</figcaption>
+					     </figure>
+					     <figure>
+					        <a href="#"><img src="images/icon_pinterest.png" alt="Pinterest"></a>
+					        <figcaption>Pinterest</figcaption>
+					     </figure>
+					     <figure>
+					        <a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a>
+					        <figcaption>Twitter</figcaption>
+					     </figure>
+					     <figure>    	    
+					     	<a href="#"><img src="images/icon_news.png" alt="News"></a>
+					        <figcaption>News</figcaption>
+					     </figure>		         	   
+					</div>
+				</div>
+			    <div class="row">
+				   	<div>
+					    <h5>We're based in Plymouth, Massachusetts.</h5>
+						<h6>We work with clients from all over. Get in touch with us, we're friendly!</h6>
+					</div>
+ 				</div>
+				<div class="row">
+					<div class="col-lg-offset-2 col-md-offset-2 col-lg-3 col-md-3 col-sm-6">
+						<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> hello@eEliteRealty.com</p>
+				 	</div>
+					<div class="col-lg-3 col-md-3 col-sm-6">
+					 	<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +1(408)555-5555</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+					 	<p><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Alante Real Estate<br><span>682, WestRd, New York 12948</span></p>
+					</div>
+			    </div>
+		    </div>
+			<div class="copy_right">
+				<p>© 2012 eElite Realty. All Rights Reserved  |  Real Estate Advertising by Placester</p>
+			</div>
+   </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
+ </body>
+</html>
