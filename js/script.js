@@ -5,6 +5,7 @@ $(function(){
 	   pause: true
 	});
     
+
     //Set up the correct color for menuOne to start with. The default is in expand state
 	$('#menuOne a.heading').css('color','#e75640');
    
