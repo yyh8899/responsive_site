@@ -18,7 +18,7 @@ $(function(){
     	
     		//Set timeout to wait for the jQuery style toggle in, then reset the color and arrow
             setTimeout(function(){  
-            	var myclass='#'+thisID +' .'+firstClass;
+            	var targetClass = '#'+thisID +' .'+firstClass;
 			    if ($("#"+thisID).next().hasClass("in")==true){ //if expanding
 		      			$(targetClass).css('color','#e75640');		      		
 		      			$(targetClass).find('span').remove();
