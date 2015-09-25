@@ -25,6 +25,9 @@
 
 html, body{
    height: 100%;
+} 
+
+#page-wrap{
    margin: 0 auto;
    padding: 0;
 }
@@ -101,7 +104,7 @@ a:visited {
 }
 
 a:hover{
-  color: #e75640 !important;
+  color: #e75640;
   text-decoration: none;
 }
 
@@ -122,6 +125,7 @@ a:hover{
 	border-radius: 25px;
 	
 }
+
 .arrow{
 	color: #88939b;
 	font-family: Open Sans;
@@ -133,8 +137,6 @@ a:hover{
 a .arrow:hover{
 	color: #e75640 !important;
 }
-
-
 
 								/*----------------------------------------------------------*\
 								                 Specific Style by each section
@@ -309,10 +311,7 @@ header .nav>li>a {
   color: #fff;
 }
 
-.panel-title > a.collapsed:after {
-    content: "▶";   
-    float: right;
-}
+
 
 a.heading{
 	font-family: Oswald;
@@ -323,12 +322,10 @@ a.heading{
 a.heading:active{
 	color: #e75640;
 }
-.heading:after,
-#menuOne a.heading:after {
-     
-    content: "▼";    
-    float: right;
+.heading span{
+	float: right;
 }
+
 #menuOne a.heading{
 	color: #e75640;
 }
@@ -384,6 +381,10 @@ select{
 	margin-right: -10px;
 	float: right;
 }
+.leftside{
+	margin-left: 18px;
+}
+
 /* ---------------main content--------------*/
 
 #main_content{
@@ -725,9 +726,8 @@ blockquote, blockquote p {
 	top: 40px;
 	margin: 0 auto;
 }
-.accordion-opened .accordion-toggle:after {    
-    content: "▼";    
-}
+
+
 .panel-default>.panel-heading {
 	
 	background: rgba(0,0,0,0.5);
