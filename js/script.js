@@ -20,19 +20,19 @@ $(function(){
             setTimeout(function(){  
             	var myclass='#'+thisID +' .'+firstClass;
 			    if ($("#"+thisID).next().hasClass("in")==true){ //if expanding
-		      			$(myclass).css('color','#e75640');		      		
-		      			$(myclass).find('span').remove();
-		      			$(myclass).append("<span class='glyphicon glyphicon-triangle-bottom'></span>");
-		   		}else{//collapse
-		   				$(myclass).css('color','#fff');
-		   				$(myclass).find('span').remove();
-		   				$(myclass).append("<span class='glyphicon glyphicon-triangle-right'></span>");   			
+		      			$(targetClass).css('color','#e75640');		      		
+		      			$(targetClass).find('span').remove();
+		      			$(targetClass).append("<span class='glyphicon glyphicon-triangle-bottom'></span>");
+		   		}else{//collapsed
+		   				$(targetClass).css('color','#fff');
+		   				$(targetClass).find('span').remove();
+		   				$(targetClass).append("<span class='glyphicon glyphicon-triangle-right'></span>");   			
 		   		}
 		   		//check the rest of menu to reset according
 		   		if ($('a.heading').hasClass('collapsed')==true){
-		   				$('a.heading').not(myclass).css('color','#fff');
-		   				$('a.heading').not(myclass).find('span').remove();
-		   				$('a.heading').not(myclass).append("<span class='glyphicon glyphicon-triangle-right'></span>"); 
+		   				$('a.heading').not(targetClass).css('color','#fff');
+		   				$('a.heading').not(targetClass).find('span').remove();
+		   				$('a.heading').not(targetClass).append("<span class='glyphicon glyphicon-triangle-right'></span>"); 
 		   		}
 
 	   },500);
